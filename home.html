@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Personal Blog </title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./fonts/font-awsome/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    </head>
+
+    <body>
+        <section id="banner">
+            <!--img class="logo" src="photo/IMG_E0472.JPG"-->
+            <div class="banner-text">
+                <h1>Fatima</h1>
+                <p>Create and Desgin Your Website</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>Find Out</a>
+                    <a href="#"><span></span>Read More</a>
+                </div>
+            </div>
+           
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li> <a href="#banner">HOME</a></li>
+                    <li> <a href="#features">FEATURES</a></li>
+                    <li> <a href="#service">SERVICES</a></li>
+                    <li> <a href="#testimonial">TESTIMONIALS</a></li>
+                    <li> <a href="#footer">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menuBtn">
+            <!--img src="photo/images.png" id="menu"-->
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!--features-->
+        <section id="features">
+            <div class="title-text">
+                <p>FEATURES</p>
+                <h1>Why choose us</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Experienced Staff</h1>
+                    <p>Whit us you can have an interesting website</p>
+                </div>
+                <div class="features-img">
+                    <img src="photo/features7.jpg">
+                </div>
+            </div>
+        </section>
+
+
+        <!--services-->
+        <section id="service">
+            <div class="title-text">
+                <p>SERVICES</p>
+                <h1>We Provide Better</h1>
+            </div>
+
+            <div class="service-box">
+                <div class="single-service">
+                    <img src="photo/features4.jpg">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h1> Web Desgin</h1>
+                        <hr>
+                        <p>We do our best for your website to make it special</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="photo/features3.png">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h1>Build your own website</h1>
+                        <hr>
+                        <p>build your website to show your business to more customers</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="photo/features6.jpg">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h1>Group Work</h1>
+                        <hr>
+                        <p>Our team do best to show you our best</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="photo/features13.jpg">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h1>Professional Work</h1>
+                        <hr>
+                        <p>With teamwork, you can have the expertise of eachof our people in different parts of your website</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--testimonial-->
+        <section id="testimonial">
+            <div class="title-text">
+                <p>TESTIMONIAL</p>
+                <h1>Our Cilents Say</h1>
+            </div>
+
+            <div class="testimonial-row">
+                <div class="testimonial-col">
+                    <div class="user">
+                        <img src="photo/images.jpg"> 
+                        <div class="user-inform">
+                            <h4>Jhon</h4>
+                        </div>
+                    </div>
+                    <p>They are very resposible and as they say their work is professional</p>
+                </div>
+                <div class="testimonial-col">
+                    <div class="user">
+                        <img src="photo/imags.jpg">
+                        <div class="user-inform">
+                            <h4>Paul</h4>
+                        </div>
+                    </div>
+                    <p>I love working with puctual people and they are exactly what I like</p>
+                </div>
+                <div class="testimonial-col">
+                    <div class="user">
+                        <img src="photo/index.jpg">
+                        <div class="user-inform">
+                            <h4>Rose</h4>
+                        </div>
+                    </div>
+                    <p>They are very patient and do exactly what you owe them</p>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+        <section id="footer">
+            <div class="title-text">
+                <p>CONTACT US</p>
+                <h1>Call Today!</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Get in Touch</h1>
+                    <p>You can contact with us from our social media account or with phonecall</p>
+                    <p>fatimaarab29@gmail.com</p>
+                    <p>+989393353601</p>
+                </div>
+
+                <div class="footer-right">
+                    <h1>Opening Ours</h1>
+                    <p>Every Day - 8am untill 11pm</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var menu = document.getElementById("menu")
+            var sideNav = document.getElementById("sideNav")
+
+            sideNav.style.right = "-200px"
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-200px"){
+                    sideNav.style.right = "0"
+                    menu.src = "photo/close.jpg";
+                }
+                else{
+                    sideNav.style.right = "-200px"
+                    menu.src = "#";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+
+        </script>
+
+    </body>
+</html>
